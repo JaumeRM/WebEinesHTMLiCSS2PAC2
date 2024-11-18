@@ -1,3 +1,38 @@
-<footer class="uoc-footer">
-  &copy; Universitat Oberta de Catalunya
+<footer>
+  <div class="left_footer">
+    <p>2024 - Jaume Ramon Martinez</p>
+    <p>Eines HTML i CSS II</p>
+  </div>
+  <div class="right_footer">
+    <p>
+      <label for="enllacos">Enllaços ràpids:</label>
+      <select
+        onchange="window.location=this.options[this.selectedIndex].value"
+        id="enllacos"
+      >
+        <option value="index.html">Index</option>
+        <option value="index.html">Presentació</option>
+        <option value="index.html">Categoria</option>
+        <option value="index.html">Detall</option>
+        <option value="index.html">Enllacos</option>
+      </select>
+    </p>
+    <p>
+      <a href="index.html">
+        <picture>
+          <source
+            srcset="./assets/images/ANC.png?as=webp&width=150"
+            type="image/webp"
+          />
+          <img
+            loading="lazy"
+            width="150"
+            height="65"
+            src="./assets/images/ANC.png?as=png&width=150"
+            alt="Logo"
+          />
+        </picture>
+      </a>
+    </p>
+  </div>
 </footer>

@@ -1,0 +1,46 @@
+header {
+  background: $pac2-color-background-header;
+  font-family: $pac2-font-header;
+  width: 100%;
+  left: 0;
+  top: 0;
+  font-size: 0.8rem;
+  color: rgb(255, 255, 255);
+  padding: 5px;
+
+  & img {
+    width: 190px;
+    float: left;
+    text-decoration: none;
+  }
+
+  & nav {
+    float: right;
+    padding-left: 30px;
+
+    & ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      padding-right: 40px;
+
+      & li {
+        display: inline-block;
+        line-height: 80px;
+
+        & a {
+          display: block;
+          padding: 0 10px;
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    text-align: center;
+  }
+}
