@@ -16,8 +16,7 @@
 *_BASE_*.txt
 *_LOCAL_*.txt
 *_REMOTE_*.txt
-~$*.*
-*.tmp
+
 
 ### Linux ###
 *~
@@ -249,7 +248,12 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+#WORD
+~$*.docx
+*.tmp
+
 # End of https://www.toptal.com/developers/gitignore/api/git,sass,node,macos,linux,windows,vscode,sublimetext
 
 ### UOC Boilerplate ###
 dist
+~$PAC2.docx
