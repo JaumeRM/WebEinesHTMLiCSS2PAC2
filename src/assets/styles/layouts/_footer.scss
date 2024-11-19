@@ -1,5 +1,5 @@
 footer {
-  background: $pac2-color-background-header;
+  background-color: $pac2-color-background-header;
   font-family: $pac2-font-header;
   height: 200px;
   width: 100%;
@@ -7,6 +7,12 @@ footer {
   top: 0;
   font-size: 0.8rem;
   color: rgb(255, 255, 255);
+
+  & img {
+    width: 100px;
+    float: right;
+    text-decoration: none;
+  }
 }
 
 .left_footer {
@@ -23,4 +29,18 @@ footer {
   float: right;
   width: 50%;
   text-align: right;
+}
+
+@function lightness-shift($colour) {
+  @if (lightness($colour) < 100%) {
+    @return lighten($colour, 10%);
+  } @else {
+    @return darken($colour, 10%);
+  }
+}
+
+@media (max-width: 992px) {
+  .footer {
+    background: lightness-shift($pac2-color-background-footer);
+  }
 }
