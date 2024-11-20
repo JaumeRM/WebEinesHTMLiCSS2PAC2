@@ -23,7 +23,7 @@
     background: $pac2-color-background;
 
     .speakers-item {
-      width: 600px;
+      width: 500px;
       padding: 20px;
       margin-bottom: 3rem;
       text-align: center;
@@ -43,7 +43,7 @@
         margin-top: 1rem;
         text-align: center;
         font-family: $pac2-font-title;
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
 
       .speakers-position {
@@ -54,6 +54,7 @@
         margin-top: 1rem;
         text-align: center;
         font-family: $pac2-font;
+        font-style: italic;
         font-size: 1rem;
       }
     }

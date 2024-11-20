@@ -1,0 +1,41 @@
+.sobre {
+  background-color: $pac2-color-background;
+  font-family: $pac2-font;
+}
+
+.hero {
+  height: 45vh;
+  position: relative;
+
+  background-image: url("../images/proteccio-dades-web.jpg?as=webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  & .hero__texte {
+    position: absolute;
+
+    top: 50%;
+    left: 40%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    font-family: $pac2-font-title;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero .hero__texte {
+    font-size: 2rem;
+    max-width: 750px;
+    color: rgb(255, 255, 255);
+  }
+
+  .header {
+    text-align: center;
+  }
+}
