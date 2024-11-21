@@ -8,10 +8,16 @@
   margin: 0 auto;
 
   overflow: auto;
+
+  section {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    border-bottom: 1px solid $pac2-color-ciber;
+  }
 }
 
 .hero {
-  height: 45vh;
+  min-height: 45vh;
   position: relative;
 
   background-image: url("../images/proteccio-dades-web.jpg?as=webp");
@@ -32,6 +38,40 @@
     font-weight: 900;
     color: rgb(0, 0, 0);
     font-family: $pac2-font-title;
+  }
+}
+
+.principios {
+  counter-reset: my-counter;
+  list-style: none;
+  margin-bottom: 0;
+  padding-top: 2rem;
+
+  li {
+    counter-increment: my-counter;
+    position: relative;
+    margin-bottom: 2rem;
+
+    p:first-child {
+      font-weight: bold;
+    }
+  }
+
+  li::before {
+    $size: 30px;
+    top: 0;
+    left: calc(-1 * $size - 10px);
+    position: absolute;
+    width: $size;
+    height: $size;
+    content: counter(my-counter);
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: $size;
+    background-color: $pac2-color-ciber;
+    border-radius: 50%;
   }
 }
 

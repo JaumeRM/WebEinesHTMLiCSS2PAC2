@@ -8,12 +8,6 @@ header {
   color: rgb(255, 255, 255);
   padding: 5px;
 
-  & img {
-    width: 190px;
-    float: left;
-    text-decoration: none;
-  }
-
   & nav {
     float: right;
     padding-left: 30px;
@@ -37,6 +31,17 @@ header {
       }
     }
   }
+}
+
+/* Logo */
+.logo-header {
+  float: left;
+
+  text-decoration: none;
+}
+
+.logo-header img {
+  width: 190px;
 }
 
 @media (max-width: 992px) {
