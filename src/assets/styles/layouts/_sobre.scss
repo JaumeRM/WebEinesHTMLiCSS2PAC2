@@ -36,7 +36,7 @@
     font-size: 4rem;
     line-height: 1;
     font-weight: 900;
-    color: rgb(0, 0, 0);
+    color: $pac2-font-title-color;
     font-family: $pac2-font-title;
   }
 }
@@ -79,6 +79,6 @@
   .hero .hero__texte {
     font-size: 2rem;
     max-width: 750px;
-    color: rgb(255, 255, 255);
+    color: $pac2-font-color;
   }
 }

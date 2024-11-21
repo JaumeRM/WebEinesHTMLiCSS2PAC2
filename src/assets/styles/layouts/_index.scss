@@ -26,7 +26,7 @@ a {
 body {
   height: 100vh;
   margin: 0;
-  font-family: $font-family-sans-serif;
+  font-family: $pac2-font;
   color: $pac2-font-color;
   background-color: $pac2-color-background;
 }
@@ -44,10 +44,10 @@ p {
   margin: 0 auto;
 
   &_title {
-    font-size: 5rem;
+    font-size: 4rem;
     text-transform: none;
     font-family: $pac2-font-title;
-    color: $pac2-font-color;
+    color: $pac2-color-ciber;
   }
 
   &_img {
@@ -66,7 +66,7 @@ p {
   &_subtitle {
     margin-bottom: 1em;
     font-size: calc(1em + 0.5vw);
-    color: color.scale($primary, $lightness: 50%);
+    color: $pac2-color-ciber;
     text-transform: uppercase;
   }
 }
@@ -111,7 +111,8 @@ h1 {
         margin-bottom: initial;
         text-align: center;
         background-color: $pac2-color-background;
-        padding: 10px;
+        color: $pac2-color-ciber;
+        padding: 5px;
       }
 
       &_about {
@@ -146,9 +147,22 @@ h1 {
         margin-top: 2em;
         margin-bottom: initial;
         writing-mode: vertical-rl;
-        color: $pac2-font-color;
+        color: $pac2-color-ciber;
         background-color: $pac2-color-background;
+        font-weight: bold;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    &_img {
+      display: none;
+    }
+    &_suport {
+      text-align: center;
+      width: 200px;
     }
   }
 }
