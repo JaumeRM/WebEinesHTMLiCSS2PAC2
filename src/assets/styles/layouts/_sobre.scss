@@ -14,6 +14,10 @@
     padding-bottom: 5vh;
     border-bottom: 1px solid $pac2-color-ciber;
   }
+
+  blockquote {
+    padding-top: 20px;
+  }
 }
 
 .hero {
@@ -41,7 +45,7 @@
   }
 }
 
-.principios {
+.llista-num {
   counter-reset: my-counter;
   list-style: none;
   margin-bottom: 0;
