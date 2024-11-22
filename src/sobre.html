@@ -7,11 +7,6 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
     <!-- do not remove this line! -->
     <title>Sobre nosaltres</title>
-
-    <link
-      rel="stylesheet"
-      href="../node_modules/swiper/swiper-bundle.min.css"
-    />
   </head>
   <body>
     <include src="./views/header.html"></include>
@@ -106,61 +101,11 @@
             </p>
           </div>
         </section>
-
-        <section class="row flex-column flex-md-row">
-          <div class="col-md-12">
-            <p>
-
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><picture>
-                    <source
-                      srcset="./assets/images/anc-bon-dia.jpg?as=webp"
-                      type="image/webp"
-                    />
-                    <img src="./assets/images/anc-bon-dia.jpg" alt="ANC Bon Dia" />
-                  </picture></div>
-                  <div class="swiper-slide"><picture>
-                    <source
-                      srcset="./assets/images/anc-bon-dia.jpg?as=webp"
-                      type="image/webp"
-                    />
-                    <img src="./assets/images/anc-bon-dia.jpg" alt="ANC Bon Dia" />
-                  </picture></div>
-                  <div class="swiper-slide"><picture>
-                    <source
-                      srcset="./assets/images/anc-bon-dia.jpg?as=webp"
-                      type="image/webp"
-                    />
-                    <img src="./assets/images/anc-bon-dia.jpg" alt="ANC Bon Dia" />
-                  </picture></div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-              </div>
-
-            </p>
-          </div>
-        </section>
       </div>
     </main>
 
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>
     <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-    <!-- do not remove this line! -->
   </body>
 </html>
