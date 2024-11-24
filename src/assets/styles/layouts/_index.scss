@@ -69,6 +69,10 @@ p {
     color: $pac2-color-ciber;
     text-transform: uppercase;
   }
+
+  &_about {
+    line-height: 1.3;
+  }
 }
 
 h1 {
@@ -80,10 +84,6 @@ h1 {
   color: $pac2-font-color;
   text-align: center;
   text-transform: uppercase;
-}
-
-.about {
-  line-height: 1.3;
 }
 
 // Grid layout for big screens
@@ -152,6 +152,13 @@ h1 {
         font-weight: bold;
       }
     }
+  }
+}
+
+@container (max-width: 600px) {
+  .home_about {
+    font-size: 1rem;
+    font-style: italic;
   }
 }
 

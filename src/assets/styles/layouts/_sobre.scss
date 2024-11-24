@@ -19,9 +19,26 @@
     padding: 20px;
     border-left: 2px solid $pac2-color-ciber;
   }
+
+  section:has(h2) {
+    background-color: $pac2-color-ciber;
+    color: $pac2-font-title-color;
+    border-radius: 30px;
+    border: 1px solid $pac2-color-ciber;
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+  :is(section) h2 {
+    font-size: 20px;
+  }
 }
 
 .hero {
+  container-type: inline-size;
+
   min-height: 45vh;
   position: relative;
 
@@ -43,6 +60,14 @@
     font-weight: 900;
     color: $pac2-font-title-color;
     font-family: $pac2-font-title;
+  }
+}
+
+@container (max-width: 700px) {
+  .hero .hero__texte {
+    font-size: 2rem;
+    max-width: 700px;
+    color: $pac2-font-color;
   }
 }
 
@@ -77,13 +102,5 @@
     line-height: $size;
     background-color: $pac2-color-ciber;
     border-radius: 50%;
-  }
-}
-
-@media (max-width: 992px) {
-  .hero .hero__texte {
-    font-size: 2rem;
-    max-width: 750px;
-    color: $pac2-font-color;
   }
 }

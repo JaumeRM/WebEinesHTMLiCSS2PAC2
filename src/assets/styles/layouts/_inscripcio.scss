@@ -1,4 +1,6 @@
-.contacte {
+.inscripcio {
+  container-type: inline-size;
+
   background-color: $pac2-color-background;
   font-family: $pac2-font;
 
@@ -8,6 +10,19 @@
   margin: 0 auto;
 
   overflow: auto;
+
+  section {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    border-bottom: 1px solid $pac2-color-ciber;
+  }
+}
+
+@container (max-width: 600px) {
+  .inscripcio h2 {
+    font-size: 1rem;
+    font-style: italic;
+  }
 }
 
 .swiper-slide {

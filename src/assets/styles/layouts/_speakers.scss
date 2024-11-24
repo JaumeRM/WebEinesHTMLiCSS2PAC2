@@ -1,4 +1,5 @@
 .speakers {
+  container-type: inline-size;
   margin-bottom: 4rem;
 
   h2 {
@@ -64,5 +65,14 @@
         text-align: center;
       }
     }
+  }
+}
+
+@container (max-width: 600px) {
+  .speakers-name,
+  .speakers-description,
+  h2 {
+    font-style: italic;
+    font-weight: bold;
   }
 }
