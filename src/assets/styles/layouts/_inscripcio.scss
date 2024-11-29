@@ -4,14 +4,21 @@
   background-color: $pac2-color-background;
   font-family: $pac2-font;
 
-  width: 80%;
-
-  padding: 20px;
+  width: 95vw;
+  padding: 5vw;
   margin: 0 auto;
 
   overflow: auto;
 
   section {
+    width: 90cqw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    border-bottom: 1px solid $pac2-color-ciber;
+  }
+
+  p {
+    width: 90cqw;
     padding-top: 5vh;
     padding-bottom: 5vh;
     border-bottom: 1px solid $pac2-color-ciber;
@@ -19,9 +26,18 @@
 }
 
 @container (max-width: 600px) {
-  .inscripcio h2 {
-    font-size: 1rem;
-    font-style: italic;
+  .inscripcio {
+    section {
+      width: 100cqw;
+    }
+
+    h2 {
+      width: 75cqw;
+      font-size: 1rem;
+      font-style: italic;
+      background-color: color(display-p3 0.08627 0.29019 0.48627);
+      color: color(display-p3 1 1 1);
+    }
   }
 }
 
