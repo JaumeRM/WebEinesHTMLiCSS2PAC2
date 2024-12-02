@@ -1,12 +1,12 @@
 <footer>
   <div class="left_footer">
-    <p>2024 - Jaume Ramon Martinez</p>
-    <p>Eines HTML i CSS II</p>
-  </div>
-  <div class="right_footer">
     <p>
+      <div style="width: 250px;">
       <label for="enllacos">Enllaços ràpids:</label>
+
       <select
+        class="form-select form-select-sm"
+        aria-label=".form-select-sm example"
         onchange="window.location=this.options[this.selectedIndex].value"
         id="enllacos"
       >
@@ -16,23 +16,12 @@
         <option value="sobre.html">Sobre Nosaltres</option>
         <option value="inscripcio.html">Inscripció</option>
       </select>
+    </div>
     </p>
-    <p>
-      <a href="index.html">
-        <picture>
-          <source
-            srcset="./assets/images/ANC.png?as=webp&width=150"
-            type="image/webp"
-          />
-          <img
-            loading="lazy"
-            width="150"
-            height="65"
-            src="./assets/images/ANC.png?as=png&width=150"
-            alt="Logo"
-          />
-        </picture>
-      </a>
-    </p>
+    <p><br/></p>
+  </div>
+  <div class="right_footer">
+    <p>2024 - Jaume Ramon Martinez</p>
+    <p>Eines HTML i CSS II</p>
   </div>
 </footer>
