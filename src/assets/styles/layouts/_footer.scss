@@ -15,7 +15,7 @@ footer {
   }
 }
 
-.left_footer {
+.left-footer {
   padding-top: 40px;
   padding-left: 40px;
   float: left;
@@ -23,7 +23,7 @@ footer {
   text-align: left;
 }
 
-.right_footer {
+.right-footer {
   padding-top: 40px;
   padding-right: 40px;
   float: right;
@@ -34,13 +34,14 @@ footer {
   }
 }
 
+/*
 @function lightness-shift($colour) {
-  @if (lightness($colour) < 100%) {
-    @return lighten($colour, 10%);
+  @if (color.lightness($colour) < 100%) {
+    @return color.adjust($colour, 10%);
   } @else {
-    @return darken($colour, 10%);
+    @return color.adjust($colour, -10%);
   }
-}
+}*/
 
 @media (max-width: 992px) {
   .footer {
