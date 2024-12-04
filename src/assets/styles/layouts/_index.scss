@@ -1,5 +1,15 @@
+/**************************************/
+/* PÀGINA DEL INDEX                   */
+/**************************************/
+
 @use "sass:color";
 
+/*************************************************************/
+/* Part de la definició per GRID de la portada               */
+/* https://chenhuijing.com/blog/how-i-design-with-css-grid/  */
+/*************************************************************/
+
+/* Definició dels aspectes del GRID i que ens serviran també quan no és compatible amb aquesta tecnologia */
 .home {
   position: relative;
   display: block;
@@ -8,27 +18,27 @@
   margin: 0 auto;
 }
 
-.home_title {
+.home__title {
   font-size: 4rem;
   text-transform: none;
   font-family: $pac2-font-title;
   color: $pac2-color-ciber;
 }
 
-.home_img {
+.home__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.home_suport {
+.home__suport {
   margin-top: 1em;
   font-weight: bold;
   line-height: 1.5;
   text-transform: uppercase;
 }
 
-.home_subtitle {
+.home__subtitle {
   container-type: inline-size;
   margin-bottom: 1em;
   font-size: calc(1em + 0.5vw);
@@ -36,11 +46,11 @@
   text-transform: uppercase;
 }
 
-.home_about {
+.home__about {
   line-height: 1.3;
 }
 
-// Grid layout for big screens
+/* Definició del GRID, amb 4 files i 6 columnes quan és compatible amb aquesta tecnologia */
 @supports (display: grid) {
   @media (min-width: 42em) and (min-height: 40em) {
     .home {
@@ -57,7 +67,7 @@
       padding: 0;
     }
 
-    .home_title {
+    .home__title {
       z-index: 2;
       grid-row: 1 / 2;
       grid-column: 2 / 6;
@@ -69,7 +79,7 @@
       padding: 5px;
     }
 
-    .home_about {
+    .home__about {
       grid-row: 2;
       grid-column: 2 / 3;
       align-self: center;
@@ -79,7 +89,7 @@
       background-color: $pac2-color-background;
     }
 
-    .home_suport {
+    .home__suport {
       z-index: 2;
       display: flex;
       grid-row: 3 / 4;
@@ -90,12 +100,12 @@
       background-color: $pac2-color-background;
     }
 
-    .home_img {
+    .home__img {
       grid-row: 1 / 4;
       grid-column: 4 / 8;
     }
 
-    .home_subtitle {
+    .home__subtitle {
       grid-row: 1 / -1;
       grid-column: 1/2;
       margin-top: 2em;
@@ -108,16 +118,9 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .home_img {
-    display: none;
-  }
-  .home_suport {
-    text-align: center;
-    width: 200px;
-  }
-}
-
+/*************************************************************/
+/* Resta de contingut del index que no és GRID               */
+/*************************************************************/
 .index {
   container-type: inline-size;
   background-color: $pac2-color-background;
@@ -131,6 +134,20 @@
     text-align: center;
     padding-top: 5vh;
     padding-bottom: 5vh;
+  }
+}
+
+/***********************************************************************/
+/* Definició dels comportament responsive i de container               */
+/***********************************************************************/
+
+@media screen and (max-width: 600px) {
+  .home__img {
+    display: none;
+  }
+  .home__suport {
+    text-align: center;
+    width: 200px;
   }
 }
 

@@ -1,3 +1,8 @@
+/**************************************/
+/* PÀGINA DELS SPEAKERS               */
+/**************************************/
+
+/* Definició General */
 .speakers {
   container-type: inline-size;
   margin-bottom: 4rem;
@@ -10,6 +15,12 @@
   }
 }
 
+/***************************************************************/
+/* Part de la definició pel FLEX                               */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap  */
+/***************************************************************/
+
+/* Definició per tal que sigui un flex*/
 .speakers__grid {
   display: flex;
   flex-wrap: wrap;
@@ -18,6 +29,7 @@
   background: $pac2-color-background;
 }
 
+/* Definició dels components dels speakers */
 .speakers__item {
   width: 500px;
   padding: 20px;
@@ -56,6 +68,10 @@
   margin-top: 1rem;
   text-align: center;
 }
+
+/***********************************************************************/
+/* Definició dels comportament responsive i de container               */
+/***********************************************************************/
 
 @media (max-width: 800) {
   .speakers {
