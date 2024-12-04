@@ -11,7 +11,10 @@
 
 /* Definició dels aspectes del GRID i que ens serviran també quan no és compatible amb aquesta tecnologia */
 .home {
+  // Positioning
   position: relative;
+
+  // Box model
   display: block;
   max-width: 45em;
   padding: 1em;
@@ -19,6 +22,7 @@
 }
 
 .home__title {
+  // Typography
   font-size: 4rem;
   text-transform: none;
   font-family: $pac2-font-title;
@@ -26,27 +30,35 @@
 }
 
 .home__img {
+  // Box model
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .home__suport {
+  // Box model
   margin-top: 1em;
+
+  // Typography
   font-weight: bold;
   line-height: 1.5;
   text-transform: uppercase;
 }
 
 .home__subtitle {
+  // Box model
   container-type: inline-size;
   margin-bottom: 1em;
+
+  // Typography
   font-size: calc(1em + 0.5vw);
   color: $pac2-color-ciber;
   text-transform: uppercase;
 }
 
 .home__about {
+  // Typography
   line-height: 1.3;
 }
 
@@ -54,6 +66,7 @@
 @supports (display: grid) {
   @media (min-width: 42em) and (min-height: 40em) {
     .home {
+      // Box model
       display: grid;
       grid-template-rows: 15vh 50vh 15vh 5vh;
       grid-template-columns:
@@ -68,52 +81,73 @@
     }
 
     .home__title {
+      // Box model
       z-index: 2;
       grid-row: 1 / 2;
       grid-column: 2 / 6;
-      align-self: center;
-      margin-bottom: initial;
-      text-align: center;
-      background-color: $pac2-color-background;
-      color: $pac2-color-ciber;
       padding: 5px;
+      margin-bottom: initial;
+
+      // Typography
+      align-self: center;
+      text-align: center;
+      color: $pac2-color-ciber;
+
+      // Visual
+      background-color: $pac2-color-background;
     }
 
     .home__about {
+      // Box model
       grid-row: 2;
       grid-column: 2 / 3;
-      align-self: center;
       margin-bottom: initial;
+
+      // Typography
+      align-self: center;
       text-align: end;
       color: $pac2-font-color;
+
+      // Visual
       background-color: $pac2-color-background;
     }
 
     .home__suport {
+      // Box model
       z-index: 2;
       display: flex;
       grid-row: 3 / 4;
       grid-column: 4 / 5;
       margin-top: initial;
+
+      // Typography
       text-align: center;
       color: $pac2-font-color;
+
+      // Visual
       background-color: $pac2-color-background;
     }
 
     .home__img {
+      // Box model
       grid-row: 1 / 4;
       grid-column: 4 / 8;
     }
 
     .home__subtitle {
+      // Box model
       grid-row: 1 / -1;
       grid-column: 1/2;
       margin-top: 2em;
       margin-bottom: initial;
+
+      // Typography
+      font-weight: bold;
       writing-mode: vertical-rl;
       color: $pac2-color-ciber;
+
+      // Visual
       background-color: $pac2-color-background;
-      font-weight: bold;
     }
   }
 }
@@ -122,14 +156,20 @@
 /* Resta de contingut del index que no és GRID               */
 /*************************************************************/
 .index {
+  // Box model
   container-type: inline-size;
-  background-color: $pac2-color-background;
-  font-family: $pac2-font;
   width: 100%;
   display: flex;
+
+  // Typography
+  font-family: $pac2-font;
   justify-content: center;
   align-items: center;
 
+  // Visual
+  background-color: $pac2-color-background;
+
+  // Misc
   p {
     text-align: center;
     padding-top: 5vh;
@@ -143,22 +183,31 @@
 
 @media screen and (max-width: 600px) {
   .home__img {
+    // Box model
     display: none;
   }
   .home__suport {
-    text-align: center;
+    // Box model
     width: 200px;
+
+    // Typography
+    text-align: center;
   }
 }
 
 @container (max-width: 700px) {
   .index {
     p {
+      // Box model
       width: 100%;
+
+      // Typography
       font-size: 1rem;
       font-style: italic;
-      background-color: $pac2-color-ciber;
       color: red;
+
+      // Visual
+      background-color: $pac2-color-ciber;
     }
   }
 }

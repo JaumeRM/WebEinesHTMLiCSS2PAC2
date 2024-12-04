@@ -4,30 +4,40 @@
 
 /* Definició General */
 .inscripcio {
+  // Positioning
+  overflow: auto;
+
+  // Box model
   container-type: inline-size;
-
-  background-color: $pac2-color-background;
-  font-family: $pac2-font;
-
   width: 95vw;
   padding: 5vw;
   margin: 0 auto;
 
-  overflow: auto;
+  // Typography
+  font-family: $pac2-font;
+
+  // Visual
+  background-color: $pac2-color-background;
 
   p {
+    // Box model
     width: 90cqw;
     padding-top: 5vh;
     padding-bottom: 5vh;
+
+    // Visual
     border-bottom: 1px solid $pac2-color-ciber;
   }
 }
 
 /* Definició dels components de la inscripció */
 .inscripcio__section {
+  // Box model
   width: 90cqw;
   padding-top: 5vh;
   padding-bottom: 5vh;
+
+  // Visual
   border-bottom: 1px solid $pac2-color-ciber;
 }
 
@@ -35,20 +45,27 @@
 /* CSS Especial del Swipper */
 /****************************/
 .swiper {
+  // Box model
   width: 100%;
   height: 100%;
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+  // Box model
   display: flex;
   justify-content: center;
   align-items: center;
+
+  // Typography
+  text-align: center;
+  font-size: 18px;
+
+  // Visual
+  background: $pac2-color-background;
 }
 
 .swiper-slide img {
+  // Box model
   display: block;
   width: 100%;
   height: 100%;
@@ -62,15 +79,21 @@
 @container (max-width: 600px) {
   .inscripcio {
     h2 {
+      // Box model
       width: 75cqw;
+
+      // Typography
       font-size: 1rem;
       font-style: italic;
-      background-color: color(display-p3 0.08627 0.29019 0.48627);
       color: color(display-p3 1 1 1);
+
+      // Visual
+      background-color: color(display-p3 0.08627 0.29019 0.48627);
     }
   }
 
   .inscripcio__section {
+    // Box model
     width: 100cqw;
   }
 }

@@ -4,45 +4,62 @@
 
 /* Definició General */
 .sobre {
-  background-color: $pac2-color-background;
-  font-family: $pac2-font;
+  // Positioning
+  overflow: auto;
 
+  // Box model
   width: 80%;
-
   padding: 20px;
   margin: 0 auto;
 
-  overflow: auto;
+  // Typography
+  font-family: $pac2-font;
 
+  // Visual
+  background-color: $pac2-color-background;
+
+  // Misc
   h2 {
+    // Typography
     font-size: 50px;
   }
   :is(section) h2 {
+    // Typography
     font-size: 20px;
   }
 }
 
 /* Definició dels components del sobre nosaltres */
 .sobre__section {
+  // Box model
   padding-top: 5vh;
   padding-bottom: 5vh;
+
+  // Visual
   border-bottom: 1px solid $pac2-color-ciber;
 }
 
 .sobre__section:has(h2) {
-  background-color: $pac2-color-ciber;
+  // Box model
+  margin-top: 20px;
+
+  // Typography
   color: $pac2-font-title-color;
+
+  // Visual
+  background-color: $pac2-color-ciber;
   border-radius: 30px;
   border: 1px solid $pac2-color-ciber;
-  margin-top: 20px;
 }
 
 .sobre__blockquote {
+  // Box model
   padding: 20px;
   border-left: 2px solid $pac2-color-ciber;
 }
 
 .sobre__blockquote-footer {
+  // Typography
   font-weight: bold;
   font-style: italic;
 }
@@ -50,11 +67,14 @@
 /* Definició del hero */
 
 .hero {
-  container-type: inline-size;
-
-  min-height: 45vh;
+  // Positioning
   position: relative;
 
+  // Box model
+  container-type: inline-size;
+  min-height: 45vh;
+
+  // Visual
   background-image: url("../images/proteccio-dades-web.jpg?as=webp");
   background-repeat: no-repeat;
   background-position: center;
@@ -62,13 +82,13 @@
 }
 
 .hero__texte {
+  // Positioning
   position: absolute;
-
   top: 50%;
   left: 40%;
-
   transform: translate(-50%, -50%);
 
+  // Typography
   font-size: 4rem;
   line-height: 1;
   font-weight: 900;
@@ -80,47 +100,67 @@
 /* https://blog.logrocket.com/styling-numbered-lists-with-css-counters/ */
 
 .llista-num {
-  counter-reset: my-counter;
-  list-style: none;
+  // Box model
   margin-bottom: 0;
   padding-top: 2rem;
 
+  // Visual
+  list-style: none;
+
+  // Misc
+  counter-reset: my-counter;
   li {
-    counter-increment: my-counter;
+    // Positioning
     position: relative;
+
+    // Box model
     margin-bottom: 2rem;
 
+    // Misc
+    counter-increment: my-counter;
     p:first-child {
+      // Typography
       font-weight: bold;
     }
   }
 
   li::before {
+    // Positioning
     $size: 30px;
     top: 0;
-    left: calc(-1 * $size - 10px);
+    left: -40px;
     position: absolute;
+
+    // Box model
     width: $size;
     height: $size;
-    content: counter(my-counter);
-    color: #ffffff;
+
+    // Typography
+    color: $pac2-font-title-color;
     font-size: 1.25rem;
     font-weight: bold;
     text-align: center;
     line-height: $size;
+
+    // Visual
     background-color: $pac2-color-ciber;
     border-radius: 50%;
+
+    // Misc
+    content: counter(my-counter);
   }
 }
 
 /***********************************************************************/
 /* Definició dels comportament responsive i de container               */
 /***********************************************************************/
-
 @container (max-width: 700px) {
   .hero .hero__texte {
-    font-size: 2rem;
+    // Box model
     max-width: 700px;
+
+    // Typography
+    font-size: 2rem;
     color: $pac2-font-color;
   }
 }

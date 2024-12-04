@@ -1,13 +1,25 @@
+/************************************************/
+/* PÀGINA DEL FOOTER                            */
+/************************************************/
+
 footer {
-  background-color: $pac2-color-background-header;
-  font-family: $pac2-font-header;
-  height: 200px;
-  width: 100%;
+  // Positioning
   left: 0;
   top: 0;
+
+  // Box model
+  height: 200px;
+  width: 100%;
+
+  // Typography
+  font-family: $pac2-font-header;
   font-size: 0.8rem;
   color: rgb(255, 255, 255);
 
+  // Visual
+  background-color: $pac2-color-background-header;
+
+  // Misc
   & img {
     width: 100px;
     float: right;
@@ -16,19 +28,28 @@ footer {
 }
 
 .left-footer {
+  // Positioning
   padding-top: 40px;
   padding-left: 40px;
+
+  // Box model
   float: left;
   width: 50%;
+
+  // Typography
   text-align: left;
 }
 
 .right-footer {
+  // Positioning
   padding-top: 40px;
   padding-right: 40px;
+
+  // Box model
   float: right;
   width: 50%;
 
+  // Misc
   & p {
     text-align: right;
   }

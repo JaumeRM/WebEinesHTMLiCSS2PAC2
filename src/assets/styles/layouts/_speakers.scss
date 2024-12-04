@@ -4,12 +4,17 @@
 
 /* Definició General */
 .speakers {
+  // Box model
   container-type: inline-size;
   margin-bottom: 4rem;
 
+  // Misc
   h2 {
+    // Box model
     margin-top: 6rem;
     margin-bottom: 4rem;
+
+    // Typography
     font-size: calc(1.5rem + 2vw);
     text-align: center;
   }
@@ -22,41 +27,60 @@
 
 /* Definició per tal que sigui un flex*/
 .speakers__grid {
+  // Box model
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  // Typography
   text-align: center;
+
+  // Visual
   background: $pac2-color-background;
 }
 
 /* Definició dels components dels speakers */
 .speakers__item {
+  // Box model
   width: 500px;
   padding: 20px;
   margin-bottom: 3rem;
+
+  // Typography
   text-align: center;
 }
 
 .speakers__foto {
   img {
-    text-align: center;
-    border: 2px solid $pac2-color-background-header;
-    border-radius: 5%;
+    // Box model
     width: 350px;
     height: 350px;
+
+    // Typography
+    text-align: center;
+
+    // Visual
+    border: 2px solid $pac2-color-background-header;
+    border-radius: 5%;
   }
 }
 
 .speakers__name {
+  // Box model
   margin-bottom: 0;
   margin-top: 1rem;
+
+  // Typography
   text-align: center;
   font-family: $pac2-font-title;
   font-size: 2.5rem;
 }
 
 .speakers__description {
+  // Box model
   margin-top: 1rem;
+
+  // Typography
   text-align: center;
   font-family: $pac2-font;
   font-style: italic;
@@ -64,18 +88,21 @@
 }
 
 .speakers__button {
+  // Box model
   margin-bottom: 0;
   margin-top: 1rem;
+
+  // Typography
   text-align: center;
 }
 
 /***********************************************************************/
 /* Definició dels comportament responsive i de container               */
 /***********************************************************************/
-
 @media (max-width: 800) {
   .speakers {
     h2 {
+      // Box model
       margin-top: 2rem;
       margin-bottom: 1rem;
     }
@@ -86,6 +113,7 @@
   .speakers__name,
   .speakers__description,
   .speakers h2 {
+    // Typography
     font-style: italic;
     font-weight: bold;
   }

@@ -1,33 +1,55 @@
+/************************************************/
+/* PÀGINA DEL HEADER                            */
+/************************************************/
+
 .header {
-  background: $pac2-color-background-header;
-  font-family: $pac2-font-header;
-  width: 100%;
+  // Positioning
   left: 0;
   top: 0;
+
+  // Box model
+  width: 100%;
+  padding: 5px;
+
+  // Typography
+  font-family: $pac2-font-header;
   font-size: 0.8rem;
   color: $pac2-font-title-color;
-  padding: 5px;
+
+  // Visual
+  background: $pac2-color-background-header;
 }
 
 .header-navegador {
+  // Box model
   float: right;
   padding-left: 30px;
 
+  // Misc
   ul {
+    // Box model
     margin: 0;
     padding: 0;
-    list-style: none;
     padding-right: 40px;
+
+    // Visual
+    list-style: none;
   }
 
   li {
+    // Box model
     display: inline-block;
+
+    // Typography
     line-height: 80px;
   }
 
   a {
+    // Box model
     display: block;
     padding: 0 10px;
+
+    // Typography
     text-decoration: none;
     color: $pac2-font-title-color;
   }
@@ -35,17 +57,21 @@
 
 /* Logo */
 .logo-header {
+  // Box model
   float: left;
 
+  // Typography
   text-decoration: none;
 }
 
 .logo-header img {
+  // Box model
   width: 190px;
 }
 
 @media (max-width: 992px) {
   .header {
+    // Typography
     text-align: center;
   }
 }
