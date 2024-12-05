@@ -16,10 +16,15 @@ body {
   // Box model
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  margin: 0;
 
   // Typography
-
   font-family: $pac2-font;
+  color: $pac2-font-color;
+
+  // Visual
+  background-color: $pac2-color-background;
 }
 
 *,
@@ -41,17 +46,4 @@ img {
 a {
   // Typography
   text-decoration: none;
-}
-
-body {
-  // Box model
-  height: 100vh;
-  margin: 0;
-
-  // Typography
-  font-family: $pac2-font;
-  color: $pac2-font-color;
-
-  // Visual
-  background-color: $pac2-color-background;
 }
