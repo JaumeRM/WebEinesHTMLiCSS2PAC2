@@ -18,7 +18,7 @@ body {
   flex-direction: column;
 
   // Typography
-  background-color: $pac2-color-background;
+
   font-family: $pac2-font;
 }
 
@@ -54,20 +54,4 @@ body {
 
   // Visual
   background-color: $pac2-color-background;
-}
-
-h1 {
-  // Positioning
-  z-index: 2;
-
-  // Box model
-  margin-bottom: 1em;
-
-  // Typography
-  font-family: $pac2-font-header;
-  font-size: 3em;
-  font-weight: 700;
-  color: $pac2-font-color;
-  text-align: center;
-  text-transform: uppercase;
 }

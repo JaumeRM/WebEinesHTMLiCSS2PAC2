@@ -75,3 +75,10 @@
     text-align: center;
   }
 }
+
+@media (max-width: 480px) {
+  .header-navegador {
+    // Typography
+    font-size: 0.6rem;
+  }
+}

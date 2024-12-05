@@ -1,6 +1,21 @@
 /************************************************/
 /* PÀGINA DE LA INSCRIPCIÓ                      */
 /************************************************/
+@layer inscripcio-obscur, inscripcio-clar;
+
+@layer inscripcio-clar {
+  .inscripcio {
+    background-color: $pac2-color-background;
+    color: $pac2-font-color;
+  }
+}
+
+@layer inscripcio-obscur {
+  .inscripcio {
+    background-color: $pac2-color-background-dark;
+    color: $pac2-font-color-dark;
+  }
+}
 
 /* Definició General */
 .inscripcio {
@@ -13,9 +28,6 @@
 
   // Typography
   font-family: $pac2-font;
-
-  // Visual
-  background-color: $pac2-color-background;
 
   p {
     // Box model

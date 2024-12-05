@@ -2,6 +2,32 @@
 /* PÀGINA DELS SPEAKERS               */
 /**************************************/
 
+@layer speaker-obscur, speaker-clar;
+
+@layer speaker-clar {
+  .speakers {
+    background-color: $pac2-color-background;
+    color: $pac2-font-color;
+  }
+
+  .speakers__grid {
+    background-color: $pac2-color-background;
+    color: $pac2-font-color;
+  }
+}
+
+@layer speaker-obscur {
+  .speakers {
+    background-color: $pac2-color-background-dark;
+    color: $pac2-font-color-dark;
+  }
+
+  .speakers__grid {
+    background-color: $pac2-color-background-dark;
+    color: $pac2-font-color-dark;
+  }
+}
+
 /* Definició General */
 .speakers {
   // Box model
@@ -35,9 +61,6 @@
 
   // Typography
   text-align: center;
-
-  // Visual
-  background: $pac2-color-background;
 }
 
 /* Definició dels components dels speakers */
