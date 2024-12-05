@@ -4,12 +4,10 @@
 
 /* Definició General */
 .inscripcio {
-  // Positioning
-  overflow: auto;
-
   // Box model
+  place-items: center;
   container-type: inline-size;
-  width: 95vw;
+  width: 90vw;
   padding: 5vw;
   margin: 0 auto;
 
@@ -78,6 +76,8 @@
 
 @container (max-width: 600px) {
   .inscripcio {
+    height: 100svh;
+
     h2 {
       // Box model
       width: 75cqw;
