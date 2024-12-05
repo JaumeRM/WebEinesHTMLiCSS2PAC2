@@ -55,17 +55,13 @@ footer {
   }
 }
 
-/*
-@function lightness-shift($colour) {
-  @if (color.lightness($colour) < 100%) {
-    @return color.adjust($colour, 10%);
-  } @else {
-    @return color.adjust($colour, -10%);
-  }
-}*/
+@function invert($color, $amount: 100%) {
+  $inverse: change-color($color, $hue: hue($color) + 180);
+  @return mix($inverse, $color, $amount);
+}
 
 @media (max-width: 992px) {
-  .footer {
-    background: lightness-shift($pac2-color-background-footer);
+  footer {
+    background-color: invert($pac2-color-background-footer);
   }
 }

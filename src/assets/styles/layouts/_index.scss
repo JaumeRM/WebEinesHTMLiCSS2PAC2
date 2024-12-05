@@ -13,6 +13,7 @@
 .home {
   // Positioning
   position: relative;
+  container-type: inline-size;
 
   // Box model
   display: block;
@@ -196,18 +197,16 @@
 }
 
 @container (max-width: 700px) {
-  .index {
-    p {
-      // Box model
-      width: 100%;
+  .legal {
+    // Box model
+    width: 100%;
 
-      // Typography
-      font-size: 1rem;
-      font-style: italic;
-      color: red;
+    // Typography
+    font-size: 1rem;
+    font-style: italic;
+    color: $pac2-font-title-color;
 
-      // Visual
-      background-color: $pac2-color-ciber;
-    }
+    // Visual
+    background-color: $pac2-color-ciber;
   }
 }
