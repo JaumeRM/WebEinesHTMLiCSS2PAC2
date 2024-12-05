@@ -1,24 +1,19 @@
 <footer>
   <div class="left-footer">
     <p>
-      <div style="width: 250px;">
-      <label for="enllacos">Enllaços ràpids:</label>
-
-      <select
-        class="form-select form-select-sm"
-        aria-label=".form-select-sm example"
-        onchange="window.location=this.options[this.selectedIndex].value"
-        id="enllacos"
-      >
-        <option value="index.html">--------</option>
-        <option value="index.html">Index</option>
-        <option value="speakers.html">Participants</option>
-        <option value="sobre.html">Sobre Nosaltres</option>
-        <option value="inscripcio.html">Inscripció</option>
-      </select>
-    </div>
+      <div class="btn-group">
+        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Navegador
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="index.html">Index</a></li>
+          <li><a class="dropdown-item" href="speakers.html">Participants</a></li>
+          <li><a class="dropdown-item" href="sobre.html">Sobre nosaltres</a></li>
+          <li><a class="dropdown-item" href="inscripcio.html">Inscripció</a></li>
+        </ul>
+      </div>
     </p>
-    <p><br/></p>
+
   </div>
   <div class="right-footer">
     <p>2024 - Jaume Ramon Martinez</p>

@@ -15,8 +15,7 @@
   font-family: $pac2-font;
 
   // Visual
-  //background-color: $pac2-color-background;
-  background-color: antiquewhite;
+  background-color: $pac2-color-background;
 
   p {
     // Box model
@@ -78,7 +77,7 @@
 @container (max-width: 600px) {
   .inscripcio {
     // Box model
-    height: 100svh;
+    height: 100dvh;
 
     h2 {
       // Box model
